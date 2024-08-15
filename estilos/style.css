@@ -14,7 +14,7 @@
     --cor005: #BFADA8;
 }
 html, body {
-    background-image: linear-gradient(to bottom, #3772a6ce, #595d5ece);
+    background-image: linear-gradient(to bottom, #3772a6ce, #381e42ce);
     background-attachment: fixed;
     width: 100vw;
     height: 100vh;
@@ -44,11 +44,14 @@ div#img {
 }
 div#formulario{
     display: block;
-    padding: 10px;
+    padding: 1em;
 }
 h1{
     text-align: center;
-    font-size: 1.8em;
+    font-size: 2em;
     padding: 8px;
+}
+div.campo {
+    padding: 8px 0px;
 }
 
