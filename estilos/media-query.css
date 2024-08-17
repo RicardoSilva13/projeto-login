@@ -1,2 +1,46 @@
 @charset "UTF-8";
 
+/*
+Typical Device Breackpoints
+-----------------------------
+Telas Pequenas : Até 600px
+
+Smartphones : 576px a 767px
+
+Tablets : 768px a 1199px 
+
+Desktops & Laptops : 1200px a 1919px
+
+Grandes Telas : 1920px e acima
+ */
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+    
+    section#login {
+        width: 80vw;
+    }
+    div#img {
+        float: left;
+        width: 35%;
+        height: 100%;
+    }
+    div#formulario {
+        float: right;
+        width: 65%;
+    }
+}
+@media screen and (min-width: 1080px) {
+
+    section#login {
+        width: 980px;
+    }
+    div#img {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+    div#formulario {
+        float: right;
+        width: 50%;
+    }
+}

@@ -10,11 +10,11 @@
     --cor001: #3772A6;
     --cor002: #7A9FBF;
     --cor003: #D8E6F2;
-    --cor004: #4F5859;
+    --cor004: #381e42;
     --cor005: #BFADA8;
 }
 html, body {
-    background-image: linear-gradient(to bottom, #3772a6ce, #381e42ce);
+    background-image: linear-gradient(to bottom, #3772a6, #381e42);
     background-attachment: fixed;
     width: 100vw;
     height: 100vh;
@@ -35,6 +35,9 @@ section#login {
     border-radius: 20px;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.4);
     overflow: hidden;
+
+    transition: width .3s, heigth .3s;
+    transition-timing-function: ease;
 }
 div#img {
     display: block;
@@ -50,6 +53,7 @@ h1{
     text-align: center;
     font-size: 2em;
     padding: 8px;
+    font-weight: bold;
 }
 div.campo {
     padding: 8px 0px;
