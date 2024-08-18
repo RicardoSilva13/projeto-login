@@ -1,61 +1,134 @@
 @charset "UTF-8";
 
- * {
+* {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
- }
- :root {
-    --cor001: #3772A6;
-    --cor002: #7A9FBF;
-    --cor003: #D8E6F2;
-    --cor004: #381e42;
-    --cor005: #BFADA8;
 }
-html, body {
+
+:root {
+    --cor001: #3772A6;
+    --cor002: #D8E6F2;
+    --cor004: #381e42;
+    --cor005: #3f275a;
+}
+
+html,
+body {
     background-image: linear-gradient(to bottom, #3772a6, #381e42);
     background-attachment: fixed;
     width: 100vw;
     height: 100vh;
 }
+
 main {
     position: relative;
     width: 100vw;
     height: 100vh;
 }
+
 section#login {
     background-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 300px;
     height: 600px;
     border-radius: 20px;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.4);
     overflow: hidden;
-
-    transition: width .3s, heigth .3s;
+    
+    transform: translate(-50%, -50%);
+    transition: width .2s, heigth .3s;
     transition-timing-function: ease;
 }
+
 div#img {
     display: block;
     background: url(../imagens/pexels-helloiamtugce-14843365.jpg) no-repeat bottom;
     background-size: cover;
     height: 240px;
 }
-div#formulario{
+
+div#formulario {
     display: block;
     padding: 1em;
 }
-h1{
+
+h1 {
     text-align: center;
     font-size: 2em;
     padding: 8px;
-    font-weight: bold;
-}
-div.campo {
-    padding: 8px 0px;
+    font-weight: 700;
 }
 
+div#formulario>p {
+    display: block;
+    font-size: 1.2em;
+}
+
+div.campo {
+    display: block;
+    background-color: #381e42;
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+    border: none;
+    border-radius: 8px;
+}
+div.campo i {
+    font-size: 2em;
+    padding: 4px;
+    color: white;
+    width: 40px;
+    height: 100%;
+
+}
+
+div.campo input{
+    background-color: #8ab5da;
+    width: calc(100% - 45px);
+    height: 38px;
+    border: 1px solid #381e42;
+    border-radius: 8px;
+    transform: translateY(-10px);
+}
+
+.botao {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+    background-color: #381e42;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.botao:hover {
+    background-color: #4d2a5a;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cadastre-se {
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: 2px solid #381e42;
+    color: #381e42;
+    border-radius: 8px;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.cadastre-se:hover {
+    background-color: #381e42;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
